@@ -1,0 +1,28 @@
+#include <windows.h>
+#include "PJ64KeyGenGui.h"
+
+1 RT_MANIFEST "PJ64KeyGenGui.manifest"
+
+IDD_KEYGEN DIALOGEX 0, 0, 330, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PJ64 KeyGen"
+FONT 9, "Segoe UI", 400, 0, 1
+BEGIN
+    LTEXT           "Machine ID:", -1, 10, 10, 55, 10
+    EDITTEXT        IDC_MACHINEID, 70, 8, 250, 12, ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Name:", -1, 10, 32, 55, 10
+    EDITTEXT        IDC_NAME, 70, 30, 250, 12, ES_AUTOHSCROLL
+    LTEXT           "Email:", -1, 10, 54, 55, 10
+    EDITTEXT        IDC_EMAIL, 70, 52, 250, 12, ES_AUTOHSCROLL
+    LTEXT           "Code:", -1, 10, 76, 55, 10
+    EDITTEXT        IDC_CODE, 70, 74, 250, 12, ES_AUTOHSCROLL
+    GROUPBOX        "Stored key", -1, 7, 96, 316, 26
+    LTEXT           "No key stored yet.", IDC_STATUS, 15, 106, 300, 10
+    DEFPUSHBUTTON   "Generate", IDC_GENERATE, 10, 128, 60, 16
+    PUSHBUTTON      "Refresh", IDC_REFRESH, 76, 128, 60, 16
+    PUSHBUTTON      "Backup...", IDC_BACKUP, 142, 128, 60, 16
+    PUSHBUTTON      "Restore...", IDC_RESTORE, 208, 128, 60, 16
+    PUSHBUTTON      "Delete", IDC_DELETE, 274, 128, 49, 16
+    PUSHBUTTON      "Self test", IDC_SELFTEST, 10, 150, 60, 16
+    PUSHBUTTON      "Close", IDC_CLOSE, 263, 150, 60, 16
+END
