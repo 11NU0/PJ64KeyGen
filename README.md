@@ -1,6 +1,7 @@
 # PJ64KeyGen
 
 Project64（Nintendo 64 模擬器）支持者金鑰產生工具。
+<img width="636" height="526" alt="屏幕截图 2026-10-05 112924" src="https://github.com/user-attachments/assets/5facc353-87e5-4c6a-93d6-17fd5ace7bc7" />
 
 本專案依據 `project64-develop` 目前的原始碼，產生 Project64 存放於登錄檔中的「支持者金鑰」，
 讓模擬器不再顯示支持提示畫面。提供 **主控台版本** 與 **Windows GUI 版本** 兩種介面，
